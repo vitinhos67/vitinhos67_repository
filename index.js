@@ -7,9 +7,9 @@ async function generateRandomImage() {
     const daytime = hours > 12 && hours < 18
     const nigth = hours > 18 && hours < 5
     if(daytime) {
-        fs.readFile('./uploads/bom-dia/34.jpg', 'utf-8', (err, data) => {
+        fs.readFile('./uploads/bom-dia/34.jpg',  (err, data) => {
             
-            const content = ``
+            console.log(data)
             
             fs.writeFile('README.md', data, (err) => {
                 if(err) {
