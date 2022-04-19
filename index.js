@@ -7,31 +7,13 @@ async function generateRandomImage() {
     const daytime = hours > 12 && hours < 18
     const nigth = hours > 18 && hours < 5
     if(daytime) {
-        fs.readFile('./uploads/bom-dia/34.jpg',  (err, data) => {
-            
-            console.log(data)
-            
-            fs.writeFile('README.md', data, (err) => {
+        const path = "![name-of-you-image](./uploads/bom-dia/34.jpg)"
+        fs.writeFile('README.md', path,(err) => {
                 if(err) {
                     console.log(err);
                 }
             });
-             
-        })
     }
-   
-    
-    // fs.readdir('./uploads', (err, files) => {
-    //     if (err)
-    //       console.log(err);
-    //     else {
-    //       console.log("\nCurrent directory filenames:");
-    //       files.forEach(file => {
-    //         console.log(file);
-    //       })
-    //     }
-    //   })
 }
 
-generateRandomImage()
-
+generateRandomImage();
