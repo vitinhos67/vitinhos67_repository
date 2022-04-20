@@ -37,26 +37,11 @@ const generateRandomNumber = (max, min) => {
     return Math.random() * (max - min) + min
 }
 
-
-const generateNumber = () => {
-    const pathDir = currentTime().path
-    let qtd = 0
-    fs.readdir(resolve(__dirname, 'uploads', pathDir), (err, files) => {
-          
-        files.forEach((_, index, array) => {
-            qtd = array.length
-            })
-    
-      })
-    const value = generateRandomNumber(10, 1)
-    return value
-}
-    
 const generateRandomImage = () => {
-
+    const value = generateRandomNumber(10, 1)
     const pathDir = currentTime().path
     const current = (time) => currentTime(time).current
-    const path = `![name-of-you-image](./uploads/${pathDir}/${generateNumber().toFixed()}.jpg)`
+    const path = `![name-of-you-image](./uploads/${pathDir}/${value.toFixed()}.jpg)`
    
     if(current('morning')) return generateImage(path)
     if(current('daytime')) return generateImage(path)
