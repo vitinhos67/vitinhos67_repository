@@ -21,11 +21,15 @@ const currentTime = (timeParam) => {
     }
 }
 const generateImage = (path) => {
-        return fs.writeFile('README.md', path,(err) => {
+    return fs.readFile('ABOUTME.md', (error, buff) => {
+            fs.writeFile('README.md', buff + path ,(err) => {
             if(err) {
                 console.log(err);
             }
         });
+    })    
+    
+    
 }
 
 
