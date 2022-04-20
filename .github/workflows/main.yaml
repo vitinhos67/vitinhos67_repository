@@ -1,19 +1,16 @@
 
-name: Update automático
+name: Load Picture $hitpost Random
 
 on:
   schedule:
-    # cron é o "intervalo" de execução, recomendo usar
-    # o site crontab.guru para lhe ajudar a definir.
-    # nesse caso aqui, ele irá rodar a cada 10 minutos.
+    # CHECK CODE EVERY 10 MIN
     - cron: '*/10 * * * *'
 
 jobs:
   build:
-    # Inicia uma máquina virtual ubuntu
+
     runs-on: ubuntu-latest
 
-    # Checa o código atual do repositório
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
@@ -28,15 +25,11 @@ jobs:
       env:
         CI: true
 
-    # Aqui em index.js você insere
-    # o nome do seu arquivo javascript
     - name: Roda o arquivo
       run: |-
         node index.js
         cat README.md
 
-    # E no final commita e faz um push caso haja alguma diferença
-    # comparada ao código atual do repositório
     - name: Commit e push
       run: |-
         git diff
