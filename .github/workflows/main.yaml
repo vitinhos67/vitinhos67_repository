@@ -1,5 +1,5 @@
 
-name: Load Picture $hitpost Random
+name: Load Picture Random
 
 on:
   schedule:
