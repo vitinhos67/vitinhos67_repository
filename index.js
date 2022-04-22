@@ -1,15 +1,14 @@
 const fs = require('fs')
 const {resolve} = require('path')
 const date = new Date()
-const hours = date.getHours()
-
+const hours = 12
 const currentTime = (timeParam) => {
     let time = ''
     
     const morning = hours >= 6 && hours <= 12
     const daytime = hours >= 12 && hours <= 18
     const nigth = hours >= 18 && hours <= 24
-    const dawn = hours >= 0  && hours <= 5
+    const dawn = hours >= 1 && hours < 5
     
     if(morning) time = 'morning';
     if(daytime) time = 'daytime';
@@ -38,9 +37,9 @@ const generateRandomNumber = (max, min) => Math.random() * (max - min) + min
 
 const generateRandomImage = () => {
     const value = generateRandomNumber(10, 1)
-    console.log(value)
     const pathDir = currentTime().path
     const current = (time) => currentTime(time).current
+    console.log(pathDir)
     const path = `![image-${pathDir}-file-${value.toFixed()}](./uploads/${pathDir}/${value.toFixed()}.jpg)`
    
     if(current('morning')) return generateImage(path)
