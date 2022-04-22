@@ -10,6 +10,7 @@ const currentTime = (timeParam) => {
     const nigth = hours >= 18 && hours <= 24
     const dawn = hours >= 1 && hours < 5
     
+    
     if(morning) time = 'morning';
     if(daytime) time = 'daytime';
     if(nigth || dawn) time = 'nigth';
