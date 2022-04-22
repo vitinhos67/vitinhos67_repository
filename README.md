@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Victor 
 
 Estou finalizando o ensino medio, e quero despravar a comunidade de programação.
@@ -14,3 +15,16 @@ Dentre os ultimos dias venho codando em node.js com implementaçoes em bancos no
 
 
 ![image-daytime-file-3](./uploads/daytime/3.jpg)
+=======
+## Victor 
+
+Estou finalizando meu ensino medio, e quero despravar a comunidade de programação.
+
+
+Meu objetivo e algum dia poder me tornar um desenvoldedor back-end, até lá vou estudando e aperfeiçoando meus conhecimentos na area.
+
+twitter: https://twitter.com/victorsanttos67
+
+
+![name-of-you-image](./uploads/daytime/5.jpg)
+>>>>>>> 9c33c79bb80a81a3757d27eca2d60eddefea504d
