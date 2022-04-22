@@ -13,4 +13,8 @@ Dentre os ultimos dias venho codando em node.js com implementaçoes em bancos no
  <p>Dev-to: https://dev.to/vitinhos67</p>
 
 
+<<<<<<< HEAD
 ![image-daytime-file-5](./uploads/daytime/5.jpg)
+=======
+![image-nigth-file-8](./uploads/nigth/8.jpg)
+>>>>>>> a3a9bfc49dccf113c5157d47fbd1506228828b41
