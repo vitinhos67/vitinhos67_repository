@@ -33,15 +33,15 @@ const generateImage = (path) => {
 }
 
 
-const generateRandomNumber = (max, min) => {
-    return Math.random() * (max - min) + min
-}
+const generateRandomNumber = (max, min) => Math.random() * (max - min) + min
+
 
 const generateRandomImage = () => {
     const value = generateRandomNumber(10, 1)
+    console.log(value)
     const pathDir = currentTime().path
     const current = (time) => currentTime(time).current
-    const path = `![name-of-you-image](./uploads/${pathDir}/${value.toFixed()}.jpg)`
+    const path = `![image-${pathDir}-file-${value.toFixed()}](./uploads/${pathDir}/${value.toFixed()}.jpg)`
    
     if(current('morning')) return generateImage(path)
     if(current('daytime')) return generateImage(path)

@@ -1,7 +1,16 @@
-Prazer, me chamo Victor, estudo frequentemente sobre back end e também estou sempre codando.
+# Victor 
+
+Estou finalizando o ensino medio, e quero despravar a comunidade de programação.
+
+Meu objetivo e algum dia poder me tornar um desenvoldedor back-end, até lá vou estudando e aperfeiçoando meus conhecimentos na area.
+
+## Linguagem
+
+Dentre os ultimos dias venho codando em node.js com implementaçoes em bancos noSQL, mais especifico, mongoDB, e também conhecendo novos frameworks.
+
+## Social
+ <p>Twitter: https://twitter.com/victorsanttos67</p>
+ <p>Dev-to: https://dev.to/vitinhos67</p>
 
 
-Meu objetivo e algum dia poer me tornar um desenvoldedor back end, até la vou estudando e aperfeiçoando meu conhecimentos.
-
-
-![name-of-you-image](./uploads/daytime/2.jpg)
+![image-daytime-file-3](./uploads/daytime/3.jpg)
