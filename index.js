@@ -1,7 +1,7 @@
 const fs = require('fs')
 const {resolve} = require('path')
 const date = new Date()
-const hours = 12
+const hours = date.getHours()
 const currentTime = (timeParam) => {
     let time = ''
     
@@ -9,7 +9,7 @@ const currentTime = (timeParam) => {
     const daytime = hours >= 12 && hours <= 18
     const nigth = hours >= 18 && hours <= 24
     const dawn = hours >= 1 && hours < 5
-    
+
     
     if(morning) time = 'morning';
     if(daytime) time = 'daytime';
