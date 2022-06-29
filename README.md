@@ -13,4 +13,4 @@ Dentre os ultimos dias venho codando em node.js com implementaçoes em bancos no
  <p>Dev-to: https://dev.to/vitinhos67</p>
 
 
-![image-nigth-file-8](./uploads/nigth/8.jpg)
+![image-nigth-file-6](./uploads/nigth/6.jpg)
