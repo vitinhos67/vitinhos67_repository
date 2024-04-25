@@ -5,10 +5,10 @@ const hours = date.getHours()
 const currentTime = (timeParam) => {
     let time = ''
     
-    const morning = hours >= 7 && hours <= 12
-    const daytime = hours >= 13 && hours <= 19
-    const nigth = hours >= 19 && hours <= 23
-    const dawn = hours >= 2 && hours < 6
+    const morning = hours >= 5 && hours <= 11
+    const daytime = hours >= 11 && hours <= 17
+    const nigth = hours >= 17 && hours <= 23
+    const dawn = hours >= 0 && hours < 4
 
     
     if(morning) time = 'morning';
@@ -21,6 +21,7 @@ const currentTime = (timeParam) => {
     }
 }
 const generateImage = (path) => {
+
     return fs.writeFile('README.md', path ,(err) => {
             if(err) {
                 console.log(err);
