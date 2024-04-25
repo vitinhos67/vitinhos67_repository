@@ -21,6 +21,7 @@ const currentTime = (timeParam) => {
     }
 }
 const generateImage = (path) => {
+    console.log(path);
     return fs.readFile('ABOUTME.md', (error, buff) => {
             fs.writeFile('README.md', buff + path ,(err) => {
             if(err) {
@@ -41,8 +42,10 @@ const generateRandomImage = () => {
     const pathDir = currentTime().path
     const current = (time) => currentTime(time).current
     console.log(pathDir)
-    const path = `![image-${pathDir}-file-${value.toFixed()}](./uploads/${pathDir}/${value.toFixed()}.jpg)`
+
+    const path = `<img src="./uploads/${pathDir}/${value.toFixed()}.jpg" width="600" height="300">`
    
+
     if(current('morning')) return generateImage(path)
     if(current('daytime')) return generateImage(path)
     if(current('nigth')) return generateImage(path)

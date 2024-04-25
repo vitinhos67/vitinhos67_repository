@@ -1,1 +1,1 @@
-![image-daytime-file-9](./uploads/daytime/9.jpg)
+<img src="./uploads/daytime/2.jpg" width="600" height="300">
