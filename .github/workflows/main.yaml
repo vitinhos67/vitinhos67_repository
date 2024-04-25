@@ -4,7 +4,7 @@ name: Load Picture Random
 on:
   schedule:
     # CHECK CODE EVERY 10 MIN
-    - cron: '*/10 * * * *'
+    - cron: '*/1 * * * *'
 
 jobs:
   build:
