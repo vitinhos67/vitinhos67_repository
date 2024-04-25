@@ -1,1 +1,1 @@
-<img src="./uploads/daytime/2.jpg" width="600" height="300">
+<img src="./uploads/daytime/3.jpg" width="600" height="300">
