@@ -14,16 +14,6 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
-
-    # Instala o node na versão 16.10
-    - name: Use Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 16.10
-    - run: npm install
-      env:
-        CI: true
-
     - name: Roda o arquivo
       run: |-
         node index.js
@@ -32,8 +22,9 @@ jobs:
     - name: Commit e push
       run: |-
         git diff
-        git config --global user.email "bot-readme@example.com"
+        git config --global user.email "botficalouca@email.com"
         git config --global user.name "bot automático"
         git add -A
         git commit -m "Arquivo atualizado!" || exit 0
-        git push
+        git pull && git push
+        
