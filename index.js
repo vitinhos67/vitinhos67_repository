@@ -5,10 +5,10 @@ const hours = date.getHours()
 const currentTime = (timeParam) => {
     let time = ''
     
-    const morning = hours >= 6 && hours <= 12
-    const daytime = hours >= 12 && hours <= 18
-    const nigth = hours >= 18 && hours <= 24
-    const dawn = hours >= 1 && hours < 5
+    const morning = hours >= 7 && hours <= 12
+    const daytime = hours >= 13 && hours <= 19
+    const nigth = hours >= 19 && hours <= 23
+    const dawn = hours >= 2 && hours < 6
 
     
     if(morning) time = 'morning';
