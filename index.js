@@ -20,7 +20,7 @@ const currentTime = (timeParam) => {
   };
 };
 const generateImage = (path) => {
-  const message = `<div style="display: block;width:600px;margin: 0 auto" >${path}*Leve em consideração a imagem, isso e apenas para complimenta-lo pela visita ao meu perfil é propagar um cadinho de humor.
+  const message = `<div style="display: block;width:600px;margin: 0 auto" >${path}<p>*Leve em consideração a imagem, isso e apenas para complimenta-lo pela visita ao meu perfil é propagar um cadinho de humor.</p>
 </div>`;
 
   return fs.writeFile("README.md", message, (err) => {
