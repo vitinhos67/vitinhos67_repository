@@ -20,8 +20,10 @@ const currentTime = (timeParam) => {
   };
 };
 const generateImage = (path) => {
-  const message = `<div style="display: block;width:600px;margin: 0 auto" >${path}<p>*Leve em consideração a imagem, isso e apenas para complimenta-lo pela visita ao meu perfil é propagar um cadinho de humor.</p>
-</div>`;
+
+    const message = `<div style="display: block;width:600px;margin 0 auto" >${path}
+    <p style="font-size:18px;color:white">*Leve em consideração a imagem, isso e apenas para complimenta-lo pela visita ao meu pefile propagar um cadinho de humor.</p>
+    </div>`
 
   return fs.writeFile("README.md", message, (err) => {
     if (err) {
@@ -36,6 +38,8 @@ const generateRandomImage = () => {
   const value = generateRandomNumber(10, 1);
   const pathDir = currentTime().path;
   const current = (time) => currentTime(time).current;
+  console.log(pathDir);
+
   const path = `<img src="./uploads/${pathDir}/${value.toFixed()}.jpg" width="600" height="300">`;
 
   if (current("morning")) return generateImage(path);
