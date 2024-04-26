@@ -24,7 +24,7 @@ const generateImage = (path) => {
     const message = `<div style="display: block;width:600px;margin 0 auto">
     ${path}
     <br></br>
-    <p style="font-size:18px;color:white">*Leve em consideração a imagem, isso e apenas para complimenta-lo pela visita ao meu pefile propagar um cadinho de humor.</p>
+    <p style="font-size:8px;color:white">*Leve em consideração a imagem, isso e apenas para complimenta-lo pela visita ao meu pefile propagar um cadinho de humor.</p>
     </div>`
 
   return fs.writeFile("README.md", message, (err) => {
